@@ -1,28 +1,39 @@
+//////////////////////////
+// SERVER SETUP //
+//////////////////////////
+
+// Dependencies
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
 
-const PORT = 3000;
-
+// Setting Up Express
+const PORT = process.env.PORT || 3500;
 const app = express();
 
+// Setting Up Morgan Middleware
 app.use(logger("dev"));
 
+// Configuring Express App
 app.use(compression());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 app.use(express.static("public"));
 
+// Setting Up Mongo
 mongoose.connect("mongodb://localhost/budget", {
-  useNewUrlParser: true,
-  useFindAndModify: false
-});
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  }
+);
 
-// routes
+// Setting Up Route
 app.use(require("./routes/api.js"));
 
+// Listen for Take Off
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
