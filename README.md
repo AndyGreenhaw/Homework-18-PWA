@@ -1,63 +1,49 @@
-# Unit 18 PWA Homework: Online/Offline Budget Trackers
+## Project Title: Andy's PWA Budget Tracker
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
+![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)
 
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+## Table of Contents
 
-Offline Functionality:
+( * ) [Description](##-Description)
 
-  * Enter deposits offline
+( * ) [Installation](##-Installation)
 
-  * Enter expenses offline
+( * ) [Usage](##-Usage)
 
-When brought back online:
+( * ) [Contributing](##-Contributing)
 
-  * Offline entries should be added to tracker.
+( * ) [Tests](##-Tests)
 
-## User Story
-AS AN avid traveller
-I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
-SO THAT my account balance is accurate when I am traveling
+( * ) [License](##-License)
 
-## Business Context
-
-Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
+( * ) [Contact](##-Contact)
 
 
-## Acceptance Criteria
-GIVEN a user is on Budget App without an internet connection
-WHEN the user inputs a withdrawal or deposit
-THEN that will be shown on the page, and added to their transaction history when their connection is back online.
+## Description
 
-- - -
+The purpose of this application is to enable a user to log incoming deposits, log outgoing expenses, and then display the total spending pattern up as a line graph up to the last transaction.
 
-## Commit Early and Often
+## Installation
 
-* One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+To install this application, visit AndyGreenhaw's GitHub account, navigate to "Homework-18-PWA" and clone the repo to your local machine. Then enenter NPM install and launch the application from the terminal by entering node (or nodemon) server. Then simply visit the url ["http://localhost:3500"] in your browser.
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+## Usage
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
+After opening the app, the user can enter the name of a transaction, the amount of a transaction, and then choose to add or subtract that amount from the total. After entering each transaction, the transaction will be logged below and a line graph will display the fuction of your budget over time.
 
-* Follow these guidelines for committing:
+## Contributing
 
-  * Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
+Contributor Covenant
 
-  * Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
+## Tests
 
-  * Don't commit half done work, for the sake of your collaborators (and your future self!)
+This app has only been tested locally and through GitHub from Andy Greenhaw's computer.
 
-  * Test your application before you commit to ensure functionality at every step in the development process
+## License
 
-* We would like you to have well over 200 commits by graduation, so commit early and often!
+"GNU AGPLv2"
 
-* Deploy your application with [Heroku and MongoDB Atlas.](../04-Supplemental/MongoAtlas-Deploy.md)
+## Contact
 
-## Submission on BCS
-
-* You are required to submit the following:
-
-  * the URL to the deployed application
-
-  * the URL to the Github repository
+For questions related to this application, email andy.greenhaw@gmail.com or visit http://github.com/AndyGreenhaw for the latest information related to this application.
 

@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Setting Up Mongo
-mongoose.connect("mongodb://localhost/budget", {
+mongoose.connect(process.env.PORT || "mongodb://localhost/budget", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
